@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>google</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2 class="logo">
+        Creative World
+        <span><ion-icon name="planet-outline"></ion-icon></span>
+      </h2>
+      <nav class="navig">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">SERVICES</a>
+        <a href="#">CONTACT</a>
+        <button class="butt-popup">Login/Sign up</button>
+      </nav>
+    </header>
+    <div class="wrap">
+      <span class="ic"><ion-icon name="flash-off"></ion-icon></span>
+      <div class="form-box">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="in-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div class="in-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="forgotten">
+            <label><input type="checkbox" />Remember me</label>
+            <a href="#">forgot password?</a>
+          </div>
+          <button type="submit" class="bbt">Login</button>
+          <div class="login-reg">
+            <p>
+              don't have an account?
+              <a href="#" class="reg-link"> Regester </a>
+            </p>
+          </div>
+        </form>
+      </div>
+      <div class="form-box-reg">
+        <h2>Regestration</h2>
+        <form action="#">
+          <div class="in-box">
+            <span class="icon"><ion-icon name="person"></ion-icon></span>
+            <input type="text" required />
+            <label>Username</label>
+          </div>
+          <div class="in-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div class="in-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="forgotten">
+            <label
+              ><input type="checkbox" />I agree the terms & conditions</label
+            >
+          </div>
+          <button type="submit" class="bbt">Regester</button>
+          <div class="login-reg">
+            <p>
+              Already have an account?
+              <a href="#" class="login-link"> Login </a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
