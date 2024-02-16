@@ -30,7 +30,7 @@
           </div>
           <div class="in-box">
             <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-            <input type="password" required />
+            <input type="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
             <label>Password</label>
           </div>
           <div class="forgotten">
@@ -55,19 +55,37 @@
             <label>Username</label>
           </div>
           <div class="in-box">
+              <span class="icon"><ion-icon name="calendar-outline"></ion-icon></span>
+              <input type="date" required>
+          </div>
+          <div class="in-box">
             <span class="icon"><ion-icon name="mail"></ion-icon></span>
             <input type="email" required />
             <label>Email</label>
           </div>
           <div class="in-box">
+            <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+            <input type="tel" name="phone" pattern="[0-9]{10}" title="Please enter 10 digits" required>
+            <label>Number</label>
+          </div>
+          <div class="in-box">
             <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-            <input type="password" required />
+            <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
             <label>Password</label>
           </div>
+          <div class="sep-box" id="in-name-box" >
+            <span class="icon"><ion-icon name="transgender-outline"></ion-icon></span>
+            <label>Gender</label>
+            <div id="gender-input">
+            <input type="radio" id="male"  name="gender" value="Male">
+            <label class="name-gen" for="male">Male</label>
+            <input type="radio" id="female"  name="gender" value="Female"  >
+            <label class="name-gen" for="female">Female</label>
+          </div>
+
+          </div>
           <div class="forgotten">
-            <label
-              ><input type="checkbox" />I agree the terms & conditions</label
-            >
+            <label><input type="checkbox" />I agree the terms & conditions</label>
           </div>
           <button type="submit" class="bbt">Regester</button>
           <div class="login-reg">

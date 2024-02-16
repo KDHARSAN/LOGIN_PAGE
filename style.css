@@ -52,6 +52,7 @@ header {
   transform-origin: right;
   transition: transform 0.5s;
 }
+
 .navig a:hover:after {
   transform: scaleX(1);
   transform-origin: left;
@@ -113,6 +114,12 @@ header {
   transition: transform 0.18s ease;
   transition: none;
   transform: translateX(0);
+  overflow: scroll;
+  height: 410px;
+}
+
+.wrap.wrap.active .form-box-reg::-webkit-scrollbar{
+  display: none;
 }
 
 .wrap .form-box {
@@ -248,4 +255,23 @@ header {
 .wrap .form-box-reg {
   position: absolute;
   transform: translateX(400px);
+}
+
+
+.in-name-box{
+  display: flex;
+  align-items: flex-start;
+}
+
+.sep-box{
+  color: white;
+  margin:10px 0 25px 0;
+}
+
+.sep-box .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: white;
+  line-height: 57px;
 }
